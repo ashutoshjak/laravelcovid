@@ -30,6 +30,7 @@
                     <tr>
                         <th> Track info Title </th>
                         <th> Track info Description </th>
+                        <th> Track info person phone </th>
                         {{-- <th> User Name</th> --}}
                         <th>Actions </th>
                     </tr>
@@ -38,6 +39,7 @@
                     <tr>
                         <th> Track info Title </th>
                         <th> Track info Description </th>
+                        <th> Track info person phone </th>
                         {{-- <th> User Name</th> --}}
                         <th>Actions </th>
                     </tr>
@@ -49,6 +51,7 @@
                         <tr>
                             <td> {{ $track->track_title }} </td>
                             <td> {{ $track->track_description }} </td>
+                            <td> {{ $track->phone }} </td>
                             {{-- <td> {{ $track->name}} </td> --}}
                             {{-- <td> <img src="{{ $requestbook->icon }}" width="100" height="100"></td> --}}
                             <td>

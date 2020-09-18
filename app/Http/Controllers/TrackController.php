@@ -39,6 +39,7 @@ class TrackController extends Controller
         $track = new Track;
         $track->track_title=$request->input('track_title');  
         $track->track_description=$request->input('track_description');
+        $track->phone=$request->input('phone');
         if($track->save()){
             return new TrackResource($track);
         }

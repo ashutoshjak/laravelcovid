@@ -17,7 +17,11 @@ class CreateTracksTable extends Migration
             $table->increments('id');
             $table->string('track_title');
             $table->string('track_description');
+            $table->string('phone');
             $table->timestamps();
+        });
+          Schema::table('tracks', function (Blueprint $table) {
+            $table->foreign('phone')->references('phone')->on('users');
         });
     }
 
